@@ -3,14 +3,14 @@ import React, {Component} from 'react';
 
 class Contact extends Component {
     render() {
-        const {name, Email, Phone} = this.props
+        const {name, email, phone} = this.props.contact
         return (
-            <div>
-                <h4>Lovel</h4>
-            <ul>
-                <li>{name}</li>
-                <li>{Email}</li>
-                <li>{Phone}</li>
+            <div className="card card-body mb-3">
+                <h4>{name} <i className="fas fa-sort-down"></i></h4>
+            <ul className="list-group">
+                
+                <li className="list-group-item">{email}</li>
+                <li className="list-group-item">{phone}</li>
             </ul>
             </div>
             
